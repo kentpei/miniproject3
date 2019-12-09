@@ -11,6 +11,7 @@ Second, we create sine noise and add it with original sine wave to create new si
 
 <img src="https://github.com/kentpei/miniproject3/blob/master/with_noise.png"  width="75%" height="75%">
 <img src="https://github.com/kentpei/miniproject3/blob/master/recover_signal.png" width="75%" height="75%">
+
 FIR filter
 ------
 Library:
@@ -18,6 +19,7 @@ Matplotlibpyplot , scipy.signal , numpy
 This is an easy test for difference of FIR filter on processing the signal integrally and separately. First we configurate the parameters of FIR filter , and set the parameters of signal with 44.1KHZ frequency and 1s frequency sweep. First, we directly process the signal using FIR, later, we cut the signal into 50 sets, processing every single set individually and combine them together after filtering. From the result we can see, there is no difference for FIR filter processing signal integrally and separately.
 
 <img src="https://github.com/kentpei/miniproject3/blob/master/FIR.png" width="75%" height="75%">
+
 Butterworth Bandpass
 -------
 Library:
@@ -28,6 +30,7 @@ Here, we use scipy.signal.butter to create a bandpass Butterworth filter,and sci
 Then I create a noisy signal adding it into my input singal,and filter it with the Butterworth filter, and the picture shows great achievement of our Butterworth filter.
 
 <img src="https://github.com/kentpei/miniproject3/blob/master/Time.png" width="75%" height="75%">
+
 References
 ----------
 
