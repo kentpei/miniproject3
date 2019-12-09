@@ -30,5 +30,7 @@ Then I create a noisy signal adding it into my input singal,and filter it with t
 <img src="https://github.com/kentpei/miniproject3/blob/master/Time.png" width="75%" height="75%">
 References
 ----------
+
 [1]https://www.pythonforengineers.com/audio-and-digital-signal-processingdsp-in-python/
+
 [2]https://www.pythonforengineers.com/an-introduction-to-numpy-and-matplotlib/
