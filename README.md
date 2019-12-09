@@ -1,5 +1,4 @@
 # miniproject3_DSP
-Create Easy filter using python and some research about FIR filter
 Easy filter
 -----
 Library:	 
@@ -15,10 +14,21 @@ Second, we create sine noise and add it with original sine wave to create new si
 FIR filter
 ------
 Library:
-Matplotlib , scipy.signal , numpy
+Matplotlibpyplot , scipy.signal , numpy
 This is an easy test for difference of FIR filter on processing the signal integrally and separately. First we configurate the parameters of FIR filter , and set the parameters of signal with 44.1KHZ frequency and 1s frequency sweep. First, we directly process the signal using FIR, later, we cut the signal into 50 sets, processing every single set individually and combine them together after filtering. From the result we can see, there is no difference for FIR filter processing signal integrally and separately.
+
 <img src="https://github.com/kentpei/miniproject3/blob/master/FIR.png" width="75%" height="75%">
+Butterworth Bandpass
+-------
+Library:
+scipy.signal, numpy, matplotlib.pyplot
+Here, we use scipy.signal.butter to create a bandpass Butterworth filter,and scipy.signal.freqz is used to compute the frequency response, and scipy.signal.lfilter is used to apply the filter to a signal. First, we set up three different orders(3,6,9) for frequency response, and show the cut-off bandwith.
+<img src="https://github.com/kentpei/miniproject3/blob/master/Frequency.png" width="75%" height="75%">
 
+Then I create a noisy signal adding it into my input singal,and filter it with the Butterworth filter, and the picture shows great achievement of our Butterworth filter.
 
-
-
+<img src="https://github.com/kentpei/miniproject3/blob/master/Time.png" width="75%" height="75%">
+References
+----------
+[1]https://www.pythonforengineers.com/audio-and-digital-signal-processingdsp-in-python/
+[2]https://www.pythonforengineers.com/an-introduction-to-numpy-and-matplotlib/
